@@ -53,3 +53,30 @@ resource "aws_key_pair" "k8s" {
   key_name   = "Assignment2"
   public_key = file("${path.module}/Assignment2.pub")
 }
+
+
+
+
+
+
+resource "aws_ecr_repository" "webapp" {
+  name                 = "webapp"
+  image_tag_mutability = "MUTABLE"
+
+  image_scanning_configuration {
+    scan_on_push = true
+  }
+}
+
+
+
+resource "aws_ecr_repository" "db_mysql" {
+  name                 = "db_mysql"
+  image_tag_mutability = "MUTABLE"
+
+  image_scanning_configuration {
+    scan_on_push = true
+  }
+}
+
+
