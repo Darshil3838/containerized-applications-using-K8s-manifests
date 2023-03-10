@@ -20,7 +20,11 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
-.terraform.lock
+
+.terraform.lock.hcl
+
+Assignment2
+Assignment2.pub
 
 # Include override files you do wish to add to version control using negated pattern
 #
