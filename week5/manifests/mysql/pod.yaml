@@ -4,7 +4,6 @@ metadata:
   name: mysql
   namespace: nsmysql
   labels:
-    app: mysql
     owner: Darshil
 spec:
   containers:
