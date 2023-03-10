@@ -4,7 +4,6 @@ metadata:
   name: employees
   namespace: nsapp
   labels:
-    app: employees
     owner: Darshil
 spec:
   containers:  
