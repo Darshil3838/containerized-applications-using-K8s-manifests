@@ -14,9 +14,9 @@ spec:
     - name: http
       containerPort: 8080
       protocol: TCP
-      env:
+    env:
     - name: DBHOST
-      value: "mysql"
+      value: "mysql.nsmysql.svc.cluster.local"
     - name: DBPORT
       value: "3306"
     - name: DBUSER
